@@ -102,6 +102,85 @@ Although LightGBM achieved higher predictive performance, the WOE model was sele
 
 ---
 
+# 📊 Credit Risk LGD Analysis & Business Insights
+
+## 📊 Key Takeaways
+
+- The portfolio shows a **high Loss Given Default (~68.9%)**, indicating significant loss severity.  
+- The **recovery rate is low (~31.1%)**, meaning most defaulted exposure is not recovered.  
+- From total exposure of **111 million**, approximately **77 million is expected to be lost**.  
+- Losses are concentrated in **mid-to-high credit grades (C–E)**.  
+- **Debt consolidation loans dominate loss contribution**, making them a major risk driver.  
+- LGD increases consistently across credit grades, confirming strong **risk differentiation**.  
+- The portfolio is heavily concentrated in **high-risk segments (~99%)**, indicating concentration risk.  
+- A small number of **grade-purpose combinations drive a disproportionate share of losses**.  
+
+---
+
+## 📊 Business Summary
+
+The portfolio is exposed to **substantial credit risk**, driven by high loss severity and weak recovery performance.
+
+With expected losses approaching **70% of total exposure**, the portfolio is highly sensitive to default events.
+
+## Key Implications:
+
+- **High Loss Severity**  
+  Defaults result in significant unrecovered exposure  
+
+- **Low Recovery Efficiency**  
+  Recovery processes are not sufficient to offset losses  
+
+- **Risk Concentration**  
+  Losses are concentrated in specific credit grades and loan purposes  
+
+- **Portfolio Imbalance**  
+  Overexposure to high-risk segments reduces resilience  
+
+Overall, the portfolio requires **strategic adjustments** to improve profitability and reduce risk.
+
+---
+
+## 💼 Business Recommendations
+
+### 1. Strengthen Risk-Based Pricing
+- Adjust pricing for high LGD segments  
+- Align returns with risk exposure  
+- Integrate LGD into pricing frameworks  
+
+---
+
+### 2. Tighten Credit Underwriting
+- Apply stricter criteria for:
+  - Grades C–E  
+  - High-risk loan purposes  
+- Strengthen income and DTI validation  
+- Limit exposure for high-risk borrowers  
+
+---
+
+### 3. Enhance Recovery Strategy
+- Improve post-default collection processes  
+- Focus on high-exposure accounts  
+- Use analytics to optimize recovery prioritization  
+
+---
+
+### 4. Reduce Portfolio Concentration Risk
+- Rebalance toward lower-risk segments (A–B)  
+- Diversify loan purposes  
+- Limit concentration in high-loss categories  
+
+---
+
+### 5. Implement Ongoing Risk Monitoring
+- Track LGD and expected loss by segment  
+- Build early warning indicators  
+- Monitor portfolio risk trends  
+
+---
+
+
 ## 📈 Business Impact
 - Provides reliable LGD estimates
 - Supports:
