@@ -18,7 +18,7 @@ This project uses publicly available loan data from Kaggle:
 - 📌 Dataset: Loan Data for Credit Risk Modeling  
 - 🔗 https://www.kaggle.com/datasets/shawnysun/loan-data-for-credit-risk-modeling  
 
-The dataset includes borrower characteristics, loan details, repayment behavior, and recovery information, which are used to construct the **Loss Given Default (LGD)** target.
+The dataset includes borrower characteristics, loan details, repayment behavior, and recovery information, which are used to construct the **Loss Given Default (LGD)** target. In addition to the original source on Kaggle, the dataset is also included in this repository in ZIP format. This allows users to easily access and reproduce the analysis without needing to download the data separately from Kaggle.
 
 ### 📌 Data Usage
 - File used: `loan_data_defaults.csv`
