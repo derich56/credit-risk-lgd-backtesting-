@@ -102,9 +102,9 @@ Models were evaluated on:
 
 ---
 
-### ✅ Selected Model: **WOE Regression**
+### ✅ Selected Model: **WOE Logistic Regression**
 
-Although LightGBM achieved higher predictive performance, the WOE model was selected due to its:
+Although LightGBM achieved higher predictive performance, the **WOE Logistic Regression** model was selected due to its:
 
 - Superior **stability**
 - Better performance under data shifts (**PSI**)
@@ -205,7 +205,7 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 ## 🛠️ Tools & Technologies
 - R
 - data.table, dplyr
-- scorecard (WOE)
+- scorecard (WOE Logistic Regression)
 - lightgbm
 - ggplot2
 
