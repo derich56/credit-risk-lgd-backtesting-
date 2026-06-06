@@ -1,6 +1,5 @@
 # 📊 Credit Risk LGD Model Selection
-
-> This project demonstrates how stability and interpretability can outweigh raw accuracy in real-world credit risk modeling.
+This project demonstrates how stability and interpretability can outweigh raw accuracy in real-world credit risk modeling.
 
 ---
 
@@ -111,7 +110,7 @@ Although LightGBM achieved higher predictive performance, the **WOE Logistic Reg
 - Strong consistency in **Out-of-Time (OOT)** testing
 - High **interpretability**
 
-> In credit risk modeling, stability and interpretability are prioritized over marginal gains in accuracy.
+In credit risk modeling, stability and interpretability are prioritized over marginal gains in accuracy.
 
 # 📊 Credit Risk LGD Analysis & Business Insights
 
