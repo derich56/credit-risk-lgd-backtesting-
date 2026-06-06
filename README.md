@@ -1,6 +1,6 @@
 # 📊 Credit Risk LGD Model Selection
 
-> LGD modeling project focused on backtesting, stability analysis, and business-driven model selection
+> This project demonstrates how stability and interpretability can outweigh raw accuracy in real-world credit risk modeling.
 
 ---
 
@@ -51,7 +51,7 @@ The dataset includes borrower characteristics, loan details, repayment behavior,
 Three models were implemented:
 
 - **Linear Regression** → baseline model  
-- **WOE Regression** → interpretable, credit-risk standard  
+- **WOE Logistic Regression** → interpretable, credit-risk standard  
 - **LightGBM** → machine learning approach  
 
 ---
@@ -88,6 +88,19 @@ Models were evaluated on:
 ---
 
 ## 🏆 Final Model Selection
+> The table below summarizes model performance after data cleaning and out-of-time (OOT) validation.
+### 📊 Model Performance Summary
+| Metric          | Linear Regression | WOE Logistic Regression | LightGBM |
+|----------------|------------------|----------------|----------|
+| **RMSE (OOT)** | 0.0771           | **0.0762 ✅**  | 0.0785   |
+| **MAE (OOT)**  | 0.0589           | **0.0583 ✅**  | 0.0598   |
+| **MAPE (OOT)** | 7.46%            | **7.39% ✅**   | 7.57%    |
+| **AUC (OOT)**  | 0.667            | **0.675 ✅**   | 0.668    |
+| **Gini (Test)**| 0.3355           | **0.3519 ✅**  | 0.3360   |
+| **KS Statistic**| 0.2577          | 0.2595         | **0.2628** |
+| **PSI**        | 0.1836 ⚠️        | **0.1132 ✅**  | 0.1787 ⚠️ |
+
+---
 
 ### ✅ Selected Model: **WOE Regression**
 
@@ -99,8 +112,6 @@ Although LightGBM achieved higher predictive performance, the WOE model was sele
 - High **interpretability**
 
 > In credit risk modeling, stability and interpretability are prioritized over marginal gains in accuracy.
-
----
 
 # 📊 Credit Risk LGD Analysis & Business Insights
 
