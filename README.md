@@ -87,7 +87,7 @@ Models were evaluated on:
 ---
 
 ## 🏆 Final Model Selection
-> The table below summarizes model performance after data cleaning and out-of-time (OOT) validation.
+ The table below summarizes model performance after data cleaning and out-of-time (OOT) validation.
 ### 📊 Model Performance Summary
 | Metric          | Linear Regression | WOE Logistic Regression | LightGBM |
 |----------------|------------------|----------------|----------|
@@ -103,14 +103,11 @@ Models were evaluated on:
 
 ### ✅ Selected Model: **WOE Logistic Regression**
 
-Although LightGBM achieved higher predictive performance, the **WOE Logistic Regression** model was selected due to its:
+After evaluating predictive performance, discriminatory power, and model stability, WOE Logistic Regression was identified as the most suitable model for LGD estimation.
 
-- Superior **stability**
-- Better performance under data shifts (**PSI**)
-- Strong consistency in **Out-of-Time (OOT)** testing
-- High **interpretability**
+The model consistently outperformed the alternatives across key Out-of-Time (OOT) validation metrics, including RMSE, MAE, MAPE, AUC, and Gini. In addition, it achieved the lowest PSI value, indicating stronger robustness against population shifts and better long-term reliability.
 
-In credit risk modeling, stability and interpretability are prioritized over marginal gains in accuracy.
+Given its combination of predictive strength, stability, and interpretability, WOE Logistic Regression was selected as the final model for deployment and business decision-making.
 
 # 📊 Credit Risk LGD Analysis & Business Insights
 
