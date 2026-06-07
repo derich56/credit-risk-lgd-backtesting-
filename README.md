@@ -58,30 +58,28 @@ Three models were implemented:
 ---
 
 ### 4. Model Validation
-#### **A. Backtesting Framework**
-* **Time-based train-test split:** Data is split based on chronological order to maintain temporal integrity.
-* **Out-of-Time (OOT) validation:** Testing the model on a period outside the training data to simulate future performance.
-* **Shuffle validation:** Repeated data randomization to ensure consistent and unbiased results.
 
+#### A. Backtesting Framework
+* **Time-based train-test split**
+* **Out-of-Time (OOT) validation**
+* **Shuffle validation**
 
+#### B. Model Evaluation Metrics
+* **Accuracy:** RMSE, MAE, MAPE
+* **Discrimination:** ROC AUC, KS, Gini
+* **Stability & Risk:** Bias, Error distribution, Population Stability Index (PSI), P95 tail risk
 
-#### **B. Model Evaluation Metrics**
-* **Accuracy:** Measuring prediction deviation against actual values (RMSE, MAE, MAPE).
-* **Discrimination:** The model's ability to differentiate risk profiles (ROC AUC, KS, Gini).
-* **Stability & Risk:** Evaluating model consistency and extreme risk (Bias, Error distribution, PSI, P95 tail risk).
+#### C. Calibration
+* **Bias Correction**
+* **LGD Alignment**
 
+---
 
-
-#### **C. Calibration**
-* **Bias Correction:** Systematic adjustments to minimize over-optimism or under-estimation.
-* **LGD Alignment:** Ensuring predicted *Loss Given Default* (LGD) is aligned with actual loss realizations, ensuring valid figures for capital allocation or provisioning policies.
-  
 ### 5. Insights & Business Action
-
-* **Actionable Recommendations:** Translating complex data patterns into simple, readable reports that guide daily decision-making.
-* **Optimized Strategy:** Using model outputs to improve business processes, such as setting better credit limits and more accurate risk policies.
-* **Continuous Improvement:** Providing feedback loops that help the business adapt quickly to new trends and changing market conditions.
-* **Data-Driven Impact:** Ensuring every business move is backed by solid evidence, reducing guesswork and increasing overall efficiency.
+* Actionable Recommendations
+* Optimized Strategy
+* Continuous Improvement
+* Data-Driven Impact
 
 ---
 
