@@ -33,7 +33,7 @@ The dataset includes borrower characteristics, loan details, repayment behavior,
 
 
 ## ⚙️ Project Workflow
-
+![image alt](https://github.com/derich56/credit-risk-lgd-backtesting/blob/6307d951baea8b9143e10ee6b71f9fdedfbe77f7/Project_Workflow.png)
 ### 1. Data Preparation
 - Construct LGD using discounted recovery cash flows
 - Clean and preprocess data
