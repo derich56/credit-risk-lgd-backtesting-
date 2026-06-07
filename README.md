@@ -3,14 +3,14 @@ This project demonstrates how stability and interpretability can outweigh raw ac
 
 ---
 
-## 📌 Overview
+## 📌 1. Overview
 This project develops and evaluates multiple models to estimate **Loss Given Default (LGD)**.
 
 The goal is not only to achieve high predictive performance, but to select a model that is **stable, interpretable, and suitable for real-world credit risk applications**.
 
 ---
 
-## 📂 Dataset
+## 📂 2. Dataset
 
 This project uses publicly available loan data from Kaggle:
 
@@ -32,23 +32,23 @@ The dataset includes borrower characteristics, loan details, repayment behavior,
 
 
 
-## ⚙️ Project Workflow
+## ⚙️ 3. Project Workflow
 ![image alt](https://github.com/derich56/credit-risk-lgd-backtesting/blob/6307d951baea8b9143e10ee6b71f9fdedfbe77f7/Project_Workflow.png)
-### 1. Data Preparation
+### 3.1. Data Preparation
 - Construct LGD using discounted recovery cash flows
 - Clean and preprocess data
 - Feature engineering (e.g. utilization, zip grouping)
 
 ---
 
-### 2. Exploratory Data Analysis (EDA)
+### 3.2. Exploratory Data Analysis (EDA)
 - Analyze distributions and relationships
 - Identify key drivers of LGD
 - Detect missing values and outliers
 
 ---
 
-### 3. Model Development
+### 3.3. Model Development
 Three models were implemented:
 
 - **Linear Regression** → baseline model  
@@ -57,7 +57,7 @@ Three models were implemented:
 
 ---
 
-### 4. Model Validation
+### 3.4. Model Validation
 
 #### A. Backtesting Framework
 * **Time-based train-test split**
@@ -75,7 +75,7 @@ Three models were implemented:
 
 ---
 
-### 5. Insights & Business Action
+### 3.5. Insights & Business Action
 * Actionable Recommendations
 * Optimized Strategy
 * Continuous Improvement
@@ -83,7 +83,7 @@ Three models were implemented:
 
 ---
 
-## 🏆 Final Model Selection
+## 🏆 4. Final Model Selection
  The table below summarizes model performance after data cleaning and out-of-time (OOT) validation.
 ### 📊 Model Performance Summary
 | Metric          | Linear Regression | WOE Logistic Regression | LightGBM |
@@ -106,9 +106,9 @@ The model consistently outperformed the alternatives across key Out-of-Time (OOT
 
 Given its combination of predictive strength, stability, and interpretability, WOE Logistic Regression was selected as the final model for deployment and business decision-making.
 
-# 📊 Credit Risk LGD Analysis & Business Insights
+# 📊 5. Credit Risk LGD Analysis & Business Insights
 
-## 📊 Key Takeaways
+## 📊 5.1. Key Takeaways
 
 - The portfolio shows a **high Loss Given Default (~68.9%)**, indicating significant loss severity.  
 - The **recovery rate is low (~31.1%)**, meaning most defaulted exposure is not recovered.  
@@ -121,7 +121,7 @@ Given its combination of predictive strength, stability, and interpretability, W
 
 ---
 
-## 📊 Business Summary
+## 📊 5.2. Business Summary
 
 The portfolio is exposed to **substantial credit risk**, driven by high loss severity and weak recovery performance.
 
@@ -145,7 +145,7 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 
 ---
 
-## 💼 Business Recommendations
+## 💼 5.3. Business Recommendations
 
 ### 1. Strengthen Risk-Based Pricing
 - Adjust pricing for high LGD segments  
@@ -185,7 +185,7 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 ---
 
 
-## 📈 Business Impact
+## 📈 5.4. Business Impact
 - Provides reliable LGD estimates
 - Supports:
   - Risk-based pricing
@@ -195,7 +195,7 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ 6. Tools & Technologies
 - R
 - data.table, dplyr
 - scorecard (WOE Logistic Regression)
@@ -204,12 +204,12 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 
 ---
 
-## ⚠️ Notes
+## ⚠️ 7. Notes
 - Dataset is available via Kaggle (link above)
 - Update file path before running the script
 - Project is intended for learning and demonstration purposes
 
 ---
 
-## 👤 Author
+## 👤 8. Author
 Dylan Richard
