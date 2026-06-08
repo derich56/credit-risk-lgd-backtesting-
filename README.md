@@ -115,9 +115,9 @@ Given its combination of predictive strength, stability, and interpretability, W
 
 ## 📊 5.1. Key Takeaways
 
-- The portfolio shows a **high Loss Given Default (~68.9%)**, indicating significant loss severity.  
-- The **recovery rate is low (~31.1%)**, meaning most defaulted exposure is not recovered.  
-- From total exposure of **111 million**, approximately **77 million is expected to be lost**.  
+- The portfolio shows a **high Loss Given Default (~67%)**, indicating significant loss severity.  
+- The **recovery rate is low (~33%)**, meaning most defaulted exposure is not recovered.  
+- From total exposure of **120 million**, approximately **82 million is expected to be lost**.  
 - Losses are concentrated in **mid-to-high credit grades (C–E)**.  
 - **Debt consolidation loans dominate loss contribution**, making them a major risk driver.  
 - LGD increases consistently across credit grades, confirming strong **risk differentiation**.  
