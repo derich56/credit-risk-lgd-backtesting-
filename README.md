@@ -35,17 +35,22 @@ The dataset includes borrower characteristics, loan details, repayment behavior,
 ## ⚙️ 3. Project Workflow
 ![image alt](https://github.com/derich56/credit-risk-lgd-backtesting/blob/6307d951baea8b9143e10ee6b71f9fdedfbe77f7/Project_Workflow.png)
 ### 3.1. Data Preparation
-- Construct LGD using discounted recovery cash flows
-- Clean and preprocess data
-- Feature engineering (e.g. utilization, zip grouping)
+- Construct LGD using discounted recovery cash flows to reflect true economic loss  
+- Clean and preprocess data, including handling missing values, correcting inconsistencies, and capping extreme values  
+- Perform feature engineering to improve model performance:
+  - Utilization ratio to capture borrower credit behavior  
+  - Zip code grouping to reduce dimensionality  
+  - Financial transformations such as discount factor calculation  
+- Ensure all variables are consistent and suitable for modeling  
 
 ---
 
 ### 3.2. Exploratory Data Analysis (EDA)
-- Analyze distributions and relationships
-- Identify key drivers of LGD
-- Detect missing values and outliers
-
+- Analyze variable distributions to understand data patterns and LGD behavior  
+- Examine relationships between features and LGD to identify key risk drivers  
+- Explore differences across segments such as credit grade, purpose, and income level  
+- Detect missing values, data quality issues, and outliers  
+- Generate insights to support feature selection and modeling strategy  
 ---
 
 ### 3.3. Model Development
