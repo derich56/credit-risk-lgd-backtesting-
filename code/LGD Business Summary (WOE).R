@@ -158,7 +158,6 @@ pred_woe <- pmin(pmax(pred_woe,0),1)
 ############################################################
 test_result <- copy(test_base)
 
-# restore date
 test_result[, issue_d_date := test$issue_d_date]
 
 test_result[, pred_lgd := pred_woe]
@@ -167,8 +166,6 @@ test_result[, loss := pred_lgd * ead]
 ############################################################
 ## ✅ SAVE OUTPUT (STABLE PATH)
 ############################################################
-
-# create folder if not exist
 dir.create(here("outputs"), showWarnings = FALSE)
 
 saveRDS(test_result, here("outputs","test_result.rds"))
