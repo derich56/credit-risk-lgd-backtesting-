@@ -19,12 +19,12 @@ This project uses publicly available loan data from Kaggle:
 
 The dataset includes borrower characteristics, loan details, repayment behavior, and recovery information, which are used to construct the **Loss Given Default (LGD)** target. In addition to the original source on Kaggle, the dataset is also included in this repository in ZIP format. This allows users to easily access and reproduce the analysis without needing to download the data separately from Kaggle.
 
-### 📌 Data Usage
+#### 📌 Data Usage
 - File used: `loan_data_defaults.csv`
 - LGD derived using discounted recovery cash flows
 - Feature engineering applied (e.g., utilization, zip grouping)
 
-### ⚠️ Disclaimer
+#### ⚠️ Disclaimer
 - This dataset is publicly available on Kaggle  
 - Used for educational and modeling purposes only  
 
@@ -43,6 +43,8 @@ The dataset includes borrower characteristics, loan details, repayment behavior,
   - Financial transformations such as discount factor calculation  
 - Ensure all variables are consistent and suitable for modeling  
 
+📄 Script: `LGD EDA + Big Picture.R`
+
 ---
 
 ### 3.2. Exploratory Data Analysis (EDA)
@@ -50,7 +52,10 @@ The dataset includes borrower characteristics, loan details, repayment behavior,
 - Examine relationships between features and LGD to identify key risk drivers  
 - Explore differences across segments such as credit grade, purpose, and income level  
 - Detect missing values, data quality issues, and outliers  
-- Generate insights to support feature selection and modeling strategy  
+- Generate insights to support feature selection and modeling strategy
+
+📄 Script: `LGD EDA + Big Picture.R`
+
 ---
 
 ### 3.3. Model Development
@@ -59,6 +64,8 @@ Three models were implemented:
 - **Linear Regression** → baseline model  
 - **WOE Logistic Regression** → interpretable, credit-risk standard  
 - **LightGBM** → machine learning approach  
+
+📄 Script: `LGD Backtesting (Clean).R`
 
 ---
 
@@ -78,6 +85,8 @@ Three models were implemented:
 * **Bias Correction**
 * **LGD Alignment**
 
+📄 Script: `LGD Backtesting (Clean).R`
+
 ---
 
 ### 3.5. Insights & Business Action
@@ -85,6 +94,18 @@ Three models were implemented:
 * Optimized Strategy
 * Continuous Improvement
 * Data-Driven Impact
+
+📄 Script: `LGD Business Summary (WOE).R` & `LGD Business Dashboard.R`
+
+
+#### ▶️ Execution Note
+
+To reproduce the final business results and dashboard:
+
+1. Run:LGD Business Summary (WOE).R
+2. Then run: LGD Business Dashboard.R
+
+<sup>⚠️ Important: Always run **Business Summary → Dashboard**, as the dashboard depends on the generated output data.</sup>
 
 ---
 
@@ -132,7 +153,7 @@ The portfolio is exposed to **substantial credit risk**, driven by high loss sev
 
 With expected losses approaching **70% of total exposure**, the portfolio is highly sensitive to default events.
 
-## Key Implications:
+### Key Implications:
 
 - **High Loss Severity**  
   Defaults result in significant unrecovered exposure  
