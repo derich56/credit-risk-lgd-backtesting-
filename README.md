@@ -136,6 +136,8 @@ Given its combination of predictive strength, stability, and interpretability, W
 
 ## 📊 5.1. Key Takeaways
 
+Based on loan data from **2007 to 2014**:
+
 - The portfolio shows a **high Loss Given Default (~67%)**, indicating significant loss severity.  
 - The **recovery rate is low (~33%)**, meaning most defaulted exposure is not recovered.  
 - From total exposure of **120 million**, approximately **82 million is expected to be lost**.  
@@ -144,7 +146,6 @@ Given its combination of predictive strength, stability, and interpretability, W
 - LGD increases consistently across credit grades, confirming strong **risk differentiation**.  
 - The portfolio is heavily concentrated in **high-risk segments (~99%)**, indicating concentration risk.  
 - A small number of **grade-purpose combinations drive a disproportionate share of losses**.  
-
 ---
 
 ## 📊 5.2. Business Summary
