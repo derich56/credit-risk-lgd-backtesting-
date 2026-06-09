@@ -222,7 +222,23 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 
 ---
 
-## 🛠️ 6. Tools & Technologies
+## 📊 6. Dashboard Overview
+
+An interactive dashboard is developed to visualize LGD results and business insights based on data from **2007–2014**.
+
+### Key Features:
+- Portfolio-level KPIs: Total EAD, Total Loss, Average LGD, and Recovery Rate  
+- Interactive year range slider enabling dynamic portfolio analysis from 2007 to 2014  
+- Time-series trends of LGD and loss evolution  
+- Loss decomposition by credit grade and loan purpose  
+- Risk segmentation across High, Medium, and Low risk categories  
+- Identification of top loss-driving segments 
+
+📸 Example Dashboard:
+
+![Dashboard Preview](dashboard_layout.png)
+
+## 🛠️ 7. Tools & Technologies
 - R
 - data.table, dplyr
 - scorecard (WOE Logistic Regression)
@@ -231,12 +247,12 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 
 ---
 
-## ⚠️ 7. Notes
+## ⚠️ 8. Notes
 - Dataset is available via Kaggle (link above)
 - Update file path before running the script
 - Project is intended for learning and demonstration purposes
 
 ---
 
-## 👤 8. Author
+## 👤 9. Author
 Dylan Richard
