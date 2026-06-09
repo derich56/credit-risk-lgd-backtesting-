@@ -65,7 +65,7 @@ Three models were implemented:
 - **WOE Logistic Regression** → interpretable, credit-risk standard  
 - **LightGBM** → machine learning approach  
 
-📄 Script: `LGD Backtesting (Clean).R`
+📄 Script: `LGD Backtesting (Modeling & Validation).R`
 
 ---
 
@@ -85,7 +85,7 @@ Three models were implemented:
 * **Bias Correction**
 * **LGD Alignment**
 
-📄 Script: `LGD Backtesting (Clean).R`
+📄 Script: `LGD Backtesting (Modeling & Validation).R`
 
 ---
 
