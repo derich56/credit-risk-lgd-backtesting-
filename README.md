@@ -59,11 +59,48 @@ The dataset includes borrower characteristics, loan details, repayment behavior,
 ---
 
 ### 3.3. Model Development
-Three models were implemented:
 
-- **Linear Regression** → baseline model  
-- **WOE Logistic Regression** → interpretable, credit-risk standard  
-- **LightGBM** → machine learning approach  
+To ensure a balanced evaluation between interpretability, stability, and predictive performance, three modeling approaches were selected, representing both traditional statistical techniques and advanced machine learning methods.
+
+---
+
+#### A. **Linear Regression (Baseline Model)**
+A standard linear regression model was used as a performance benchmark.
+
+- Provides a simple and transparent framework to understand linear relationships between predictors and LGD  
+- Highly interpretable, enabling clear attribution of model outputs to input variables  
+- However, limited in capturing non-linear relationships and interactions across features  
+
+This model serves as a reference point to assess the incremental value of more advanced approaches.
+
+---
+
+#### B. **WOE Logistic Regression (Industry Standard)**
+A logistic regression model enhanced with **Weight of Evidence (WOE)** transformation, widely adopted in credit risk modeling.
+
+- Transforms variables into a monotonic and statistically robust format  
+- Ensures alignment with credit risk modeling best practices  
+- Highly interpretable and suitable for regulatory and business communication  
+- More stable under population shifts compared to purely data-driven models  
+
+This approach balances predictive performance with strong interpretability and robustness, making it well-suited for real-world deployment.
+
+---
+
+#### C. **LightGBM (Machine Learning Approach)**
+A gradient boosting framework designed to capture complex, non-linear patterns in the data.
+
+- Efficiently models interactions and non-linear relationships across variables  
+- Typically delivers strong predictive performance in large and complex datasets  
+- However, less transparent and more challenging to interpret in a business context  
+- More sensitive to data shifts, requiring careful validation and monitoring  
+
+This model represents a high-performance benchmark, particularly for assessing the upper bound of predictive capability.
+
+---
+
+**Overall, the selected models provide a structured comparison across a spectrum of modeling philosophies—ranging from interpretable statistical methods to high-performance machine learning techniques.**
+
 
 📄 Script: `LGD Backtesting (Modeling & Validation).R`
 
@@ -130,7 +167,13 @@ After evaluating predictive performance, discriminatory power, and model stabili
 
 The model consistently outperformed the alternatives across key Out-of-Time (OOT) validation metrics, including RMSE, MAE, MAPE, AUC, and Gini. In addition, it achieved the lowest PSI value, indicating stronger robustness against population shifts and better long-term reliability.
 
+While LightGBM demonstrated competitive predictive performance, it was not selected due to its weaker stability and limited interpretability. The model exhibited higher PSI values, indicating greater sensitivity to population shifts, which may impact robustness over time.
+
+In addition, its black-box nature makes it less suitable for regulatory environments where model transparency and explainability are critical. As a result, despite its strong predictive capability, LightGBM was deemed less appropriate for real-world credit risk deployment.
+
 Given its combination of predictive strength, stability, and interpretability, WOE Logistic Regression was selected as the final model for deployment and business decision-making.
+
+This reinforces the importance of prioritizing model governance, stability, and interpretability over marginal gains in predictive accuracy.
 
 # 📊 5. Credit Risk LGD Analysis & Business Insights
 
