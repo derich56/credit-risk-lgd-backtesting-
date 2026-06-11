@@ -281,7 +281,7 @@ ui <- dashboardPage(
 )
 
 ############################################################
-## ✅ FORMAT PREVIOUS PERIOD (fix 2012–2012 → 2012)
+## ✅ FORMAT PREVIOUS PERIOD
 ############################################################
 format_prev_period <- function(start_year, end_year){
   
