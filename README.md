@@ -270,18 +270,17 @@ Overall, the portfolio requires **strategic adjustments** to improve profitabili
 An interactive dashboard is developed to visualize LGD results and business insights based on data from **2007–2014**.
 
 ### Key Features:
-### Key Features:
 - Portfolio-level KPIs: Total EAD, Total Loss, Average LGD, and Recovery Rate  
 - Dynamic trend indicators showing both absolute change and percentage growth  
 - Advanced KPI comparison using:
   - Percentage change for volume-based metrics (EAD, Loss)
   - Percentage point (pts) change for rate-based metrics (LGD, Recovery)  
+- Automated key takeaways summarizing critical portfolio insights directly below KPIs  
 - Interactive year range slider enabling flexible analysis from 2007 to 2014  
 - Time-series visualization of LGD and loss trends  
 - Loss decomposition by credit grade and loan purpose  
 - Risk segmentation across High, Medium, and Low risk categories  
 - Identification of top loss-driving segments  
-``
 
 📸 Example Dashboard:
 
