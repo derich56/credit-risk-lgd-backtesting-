@@ -284,7 +284,7 @@ An interactive dashboard is developed to visualize LGD results and business insi
 
 📸 Example Dashboard:
 
-![Dashboard Preview](dashboard_layout.png)
+![Dashboard Preview](dashboard.png)
 
 ## 🛠️ 7. Tools & Technologies
 - R
