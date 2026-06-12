@@ -274,7 +274,8 @@ An interactive dashboard is developed to visualize LGD results and business insi
 - Dynamic trend indicators showing both absolute change and percentage growth  
 - Advanced KPI comparison using:
   - Percentage change for volume-based metrics (EAD, Loss)
-  - Percentage point (pts) change for rate-based metrics (LGD, Recovery)  
+  - Percentage point (pts) change for rate-based metrics (LGD, Recovery)
+  - Inclusion of baseline values from the previous period to provide clear context for KPI change
 - Automated key takeaways summarizing critical portfolio insights directly below KPIs  
 - Interactive year range slider enabling flexible analysis from 2007 to 2014  
 - Time-series visualization of LGD and loss trends  
@@ -284,7 +285,7 @@ An interactive dashboard is developed to visualize LGD results and business insi
 
 📸 Example Dashboard:
 
-![Dashboard Preview](dashboard.png)
+![Dashboard Preview](dashboard_layout.png)
 
 ## 🛠️ 7. Tools & Technologies
 - R
